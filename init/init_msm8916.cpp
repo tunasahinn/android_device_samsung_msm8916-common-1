@@ -228,46 +228,55 @@ void init_target_properties(void)
 	else if (bootloader.find("A300FU") == 0) {
 		device = (char *)"a3ultexx";
 		model = (char *)"SM-A300FU";
+	        property_set("ro.sf.lcd_density", "400");
 		set_lte_properties();
 	}
 	else if (bootloader.find("A300YZ") == 0) {
 		device = (char *)"a3ltezt";
 		model = (char *)"SM-A300YZ";
+		property_set("ro.sf.lcd_density", "400");
 		set_lte_properties();
 	}
 	else if (bootloader.find("A3000") == 0) {
 		device = (char *)"a3ltechn";
 		model = (char *)"SM-A3000";
+		property_set("ro.sf.lcd_density", "400");
 		set_lte_properties();
 	}
 	else if (bootloader.find("A3009") == 0) {
 		device = (char *)"a3ltectc";
 		model = (char *)"SM-A3009";
+		property_set("ro.sf.lcd_density", "400");
 		set_lte_properties();
 	}
 	else if (bootloader.find("A300F") == 0) {
 		device = (char *)"a3ltexx";
 		model = (char *)"SM-A300F";
+		property_set("ro.sf.lcd_density", "400");
 		set_lte_properties();
 	}
 	else if (bootloader.find("A300H") == 0) {
 		device = (char *)"a33g";
 		model = (char *)"SM-A300H";
+		property_set("ro.sf.lcd_density", "400");
 		set_gsm_properties();
 	}
 	else if (bootloader.find("A300M") == 0) {
 		device = (char *)"a3lteub";
 		model = (char *)"SM-A300M";
+		property_set("ro.sf.lcd_density", "400");
 		set_lte_properties();
 	}
 	else if (bootloader.find("A300G") == 0) {
 		device = (char *)"a3ltezso";
 		model = (char *)"SM-A300G";
+		property_set("ro.sf.lcd_density", "400");
 		set_lte_properties();
 	}
 	else if (bootloader.find("A300Y") == 0) {
 		device = (char *)"a3ultedv";
 		model = (char *)"SM-A300Y";
+		property_set("ro.sf.lcd_density", "400");
 		set_lte_properties();
 	}
 	// Grand Prime LTE
