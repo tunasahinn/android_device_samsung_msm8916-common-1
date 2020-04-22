@@ -228,6 +228,7 @@ void init_target_properties(void)
 	else if (bootloader.find("A300FU") == 0) {
 		device = (char *)"a3ultexx";
 		model = (char *)"SM-A300FU";
+		property_set("ro.sf.lcd_density", "400");
 		set_lte_properties();
 	}
 	else if (bootloader.find("A300YZ") == 0) {
